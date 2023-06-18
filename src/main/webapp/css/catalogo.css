@@ -1,0 +1,28 @@
+.conten{
+    margin-left: 50px; 
+    padding-left: 0px;
+}
+ 
+.w-100 {
+  width: 100% !important;
+  height: 60vh;
+} 
+.caja{  
+    text-align: center; 
+    margin: 15px;
+}
+.img-cat{ 
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+}
+.container-cat{ 
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.container-aviso.aviso{
+    padding-top: 1000px;
+}

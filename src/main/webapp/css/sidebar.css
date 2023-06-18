@@ -1,0 +1,96 @@
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 98%;
+    left: -250px;
+    background: #151719;
+    transition: all 200ms linear;
+}
+.sidebar2{
+    position: fixed;
+    width: 250px;
+    left: -250px;
+}
+.sidebar ul{
+    padding: 15px 10px;
+}
+.sidebar ul li{
+    color: rgba(230,230,230,.8);
+    list-style: none;
+    text-align: justify;
+} 
+ 
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px; 
+    font-size: 20px;
+    opacity: .9;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+.sidebar ul li:hover a{
+    padding-left: 50px;
+    background: #4e4e4e;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancelar{
+    position: absolute;
+    cursor: pointer;
+    background: #151719;
+    border-radius: 3px;
+}
+label #btn{
+    left: 260px;
+    top: 20px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 10px;
+    transition: all .5s;
+}
+label #cancelar{
+    z-index: 1111;
+    left: 180px;
+    top: 0px;
+    font-size: 35px;
+    color: white;
+    padding: 4px 10px;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #btn{
+    left: 300px;
+}
+
+.active{
+    left: 0;
+} 
+.margen{
+    margin-left: 200px;
+    transition: all 200ms linear;
+}
+
+.toggle-button{
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    cursor: pointer;
+}
+.toggle-button span{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
